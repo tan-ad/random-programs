@@ -14,5 +14,5 @@ def gcdalgn(numberlist):
         gcd = gcdalg(gcd,numberlist[i])
     return gcd
 
-vals= list(map(int, input("input with spaces between numbers: ").split(" "))))
+vals= list(map(int, input("input with spaces between numbers: ").split(" ")))
 print(gcdalgn(vals))
