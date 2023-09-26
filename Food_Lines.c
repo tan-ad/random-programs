@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #define MAX_LINES 100
+
 /*
 dmoj problem lkp18c2p1
 
@@ -38,18 +39,16 @@ output: number of people in line that each person joins
 int shortest_line(int lines[], int num_lines){
     int shortest = 0;
     for (int i=1;i<num_lines;i++){
-        printf("beeboo");
         if (lines[i] < lines[shortest]){
             shortest = i;
         }
     }
-    return shortest_line;
+    return shortest;
 }
 
 void solve(int lines[], int num_lines, int m){
     int shortest;
     for (int i=0; i<m;i++){
-        printf("blahblahblah");
         shortest=shortest_line(lines, num_lines);
         printf("%d\n", lines[shortest]);
         lines[shortest]++;
