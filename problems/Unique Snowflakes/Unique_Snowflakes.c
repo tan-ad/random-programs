@@ -1,3 +1,4 @@
+//dmoj problem cco07p2
 #include <stdio.h>
 #define SIZE 100000
 //generally ok to hardcode the maximum test case size
