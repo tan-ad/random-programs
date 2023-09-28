@@ -1,5 +1,6 @@
 #include <stdio.h>
 #define SIZE 100000
+//generally ok to hardcode the maximum test case size
 
 
 int identical_right(int snowflake1[], int snowflake2[], int start){
@@ -52,8 +53,15 @@ void check_all(int snowflakes[][6], int n){
     printf("No snowflakes are alike. \n");
 }
 int main(void){
-    static int snowflake[SIZE][6];
+    static int snowflakes[SIZE][6];
+    //use static to place array in its own separate piece of memory,
     int n;
     scanf("%d",&n);
-    
+    for (int i = 0; i < n; i+){
+        for (int j = 0; j < n; j++){
+            scanf("%d", snowflakes[i][j]);
+        }
+    }
+    check_all(snowflakes, n);
+    return 0;
 }
